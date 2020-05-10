@@ -3,4 +3,8 @@
   h1 {
     @apply py-4;
   }
+
+  @screen dark-mode {
+    @apply bg-red-800 text-gray-400;
+  }
 }

@@ -9,6 +9,9 @@
 
 .header {
   @apply bg-green-400 !important;
+  @screen dark-mode {
+    @apply bg-green-900 text-gray-900 !important;
+  }
 }
 
 .main {

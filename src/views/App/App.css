@@ -10,9 +10,9 @@
     max-width: 860px;
   }
 
-  @media (prefers-color-scheme: dark) {
+  @screen dark-mode {
     & {
-      @apply bg-gray-800 text-gray-100;
+      @apply bg-gray-800 text-gray-500;
     }
   }
 }
