@@ -18,7 +18,7 @@
 }
 
 .footer {
-  @apply m-auto p-6 text-xs;
+  @apply left-0 p-6 text-xs;
   max-width: 860px;
   ul {
     @apply flex flex-row w-full;
