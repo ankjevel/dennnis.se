@@ -27,12 +27,4 @@
 
 .project {
   @apply mb-4;
-
-  li {
-    @apply px-2 m-1 inline-block bg-orange-400 rounded-full text-xs font-normal;
-
-    @media dark-mode {
-      @apply bg-indigo-300 text-gray-900;
-    }
-  }
 }

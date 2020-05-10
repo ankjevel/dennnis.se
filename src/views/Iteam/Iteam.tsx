@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react'
-import css from './Iteam.css'
+import Info from '@/components/Info'
+import Nav from '@/components/Nav'
+import Projects from '@/components/Projects'
 
 import projects from './projects.json'
-import Nav from '@/components/Nav'
-import Info from '@/components/Info'
+
+import css from './Iteam.css'
 
 export const Iteam = () => {
   return (
@@ -16,22 +18,7 @@ export const Iteam = () => {
 
       <main className={css.main}>
         <section className={css.projects}>
-          <ul>
-            {projects.map((p, i) => (
-              <li key={`project-${i}`} className={css.project}>
-                <h1>{p.title}</h1>
-                <h2>
-                  {p.role} <small>~ {p.when.join(' - ')}</small>
-                </h2>
-                <p>{p.desc}</p>
-                <ul>
-                  {p.tags.map((tag, j) => (
-                    <li key={`tag-${i}-${j}`}>{tag}</li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
+          <Projects projects={projects} />
         </section>
       </main>
     </Fragment>

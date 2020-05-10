@@ -1,0 +1,24 @@
+.projects {
+  @apply mb-4;
+}
+
+.split {
+  & > li {
+    @apply flex flex-row flex-wrap justify-between;
+  }
+}
+
+.left {
+  @apply w-11/12;
+}
+
+.right {
+  @apply w-1/12 self-center flex flex-col;
+  a {
+    @apply inline-block ml-auto text-center border-0 text-2xl;
+  }
+}
+
+.tags {
+  @apply flex flex-row w-auto;
+}

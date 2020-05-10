@@ -1,0 +1,29 @@
+[
+  {
+    "title": "wejay",
+    "link": {
+      "title": "\"wejay\" search on github",
+      "url": "https://github.com/Iteam1337?q=wejay&type=&language=go"
+    },
+    "desc": "Wejay is a service that creates a shared Spotify-playlist and, when signed in, controls the users player. The idea is to let all (who are in the same room) listen to the same track and the same timestamp. There's a bunch of features missing, but it (<a href=\"https://wejay.balingevagen.se/\" target=\"_blank\">should</a>) work.",
+    "tags": ["Go", "Protobuf"]
+  },
+  {
+    "title": "game on",
+    "link": {
+      "title": "\"game on\" search on github",
+      "url": "https://github.com/ankjevel?tab=repositories&q=game-on&type=&language=typescript"
+    },
+    "desc": "The title is still something I'm working on. <a href=\"https://game-on.balingevagen.se/\" target=\"_blank\">Game on</a> is yet another Poker-service on the web. It all started with me wanting to implement a nice syntax for describing cards in TypeScript and comparing hands.",
+    "tags": ["Node", "TypeScript"]
+  },
+  {
+    "title": "ms-röj (minesweeper)",
+    "link": {
+      "title": "\"ms-roj\" on github",
+      "url": "https://github.com/Iteam1337/ms-roj"
+    },
+    "desc": "This is a implementation of minesweeper in Rust. The UI is made in <em>gtk-rs</em>.",
+    "tags": ["Rust", "gtk"]
+  }
+]

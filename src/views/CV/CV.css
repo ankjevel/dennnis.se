@@ -59,7 +59,9 @@
 }
 
 .selected-projects {
-  @apply text-red-500;
+  header {
+    @apply pt-8 pb-10;
+  }
 }
 
 .me {

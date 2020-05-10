@@ -1,18 +1,17 @@
 import React, { ReactElement } from 'react'
+import { classNames } from '@/utils'
 
 import css from './Info.css'
 
-export const component = (props: {
+export const Component = (props: {
   className?: string
   children: ReactElement
 }) => {
   return (
-    <header
-      className={props.className ? `${css.info} ${props.className}` : css.info}
-    >
+    <header className={classNames([css.info, props.className])}>
       {props.children}
     </header>
   )
 }
 
-export default component
+export default Component
