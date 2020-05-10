@@ -16,3 +16,19 @@
     }
   }
 }
+
+.footer {
+  @apply m-auto p-6 text-xs;
+  max-width: 860px;
+  ul {
+    @apply flex flex-row w-full;
+  }
+
+  li {
+    @apply mr-4;
+  }
+
+  a {
+    @apply border-0 font-semibold;
+  }
+}

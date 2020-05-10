@@ -20,6 +20,20 @@ export const App = () => {
           <Route component={route404} />
         </Switch>
       </Router>
+      <footer className={css.footer}>
+        <ul>
+          <li>
+            <p>Made by me, Dennis</p>
+          </li>
+          <li>
+            <p>
+              <a href="https://github.com/ankjevel/dennnis.se/" target="_blank">
+                Source
+              </a>
+            </p>
+          </li>
+        </ul>
+      </footer>
     </div>
   )
 }
