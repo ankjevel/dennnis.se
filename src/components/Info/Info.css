@@ -1,5 +1,5 @@
 .info {
-  @apply px-6 py-4 mb-4 bg-red-400;
+  @apply px-6 py-4 mb-4 bg-red-400 min-w-full;
   h1 {
     @apply py-4;
   }
