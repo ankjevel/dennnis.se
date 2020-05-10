@@ -1,12 +1,10 @@
 import React from 'react'
-
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
-import CV from '../CV'
+import CV from '@/views/CV'
+import Iteam from '@/views/Iteam'
+import NotFound from '@/views/NotFound'
 
 import css from './App.css'
-import Iteam from '../Iteam'
-import NotFound from '../NotFound'
 
 export const App = () => {
   const routeCV: IRoute = () => <CV />

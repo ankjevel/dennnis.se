@@ -1,14 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { EntypoChevronThinLeft } from 'react-entypo'
+import { classNames } from '@/utils'
 
 import css from './Nav.css'
 
-export const component = (props: { className?: string }) => {
+export const Component = (props: { className?: string }) => {
   return (
-    <nav
-      className={props.className ? `${css.nav} ${props.className}` : css.nav}
-    >
+    <nav className={classNames([css.nav, props.className])}>
       <ul>
         <li>
           <Link to="/">
@@ -20,4 +19,4 @@ export const component = (props: { className?: string }) => {
   )
 }
 
-export default component
+export default Component

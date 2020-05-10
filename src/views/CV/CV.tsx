@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-
 import {
   EntypoMail,
   EntypoPhone,
   EntypoLinkedin,
   EntypoGithub,
 } from 'react-entypo'
+import Projects from '@/components/Projects'
+
+import projects from './projects.json'
 
 import css from './CV.css'
 
@@ -90,13 +92,12 @@ export const CV = () => {
         <section className={css.selectedProjects}>
           <header>
             <h1>Projects</h1>
+            <em>
+              These are just some side-projects that I've enjoyed working on
+            </em>
           </header>
           <article>
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-            </ul>
+            <Projects projects={projects} />
           </article>
         </section>
       </main>

@@ -1,0 +1,11 @@
+.tags {
+  @apply mb-4 flex flex-row w-full;
+
+  li {
+    @apply px-2 m-1 inline-block bg-orange-400 rounded-full text-xs font-normal;
+
+    @media dark-mode {
+      @apply bg-indigo-300 text-gray-900;
+    }
+  }
+}
