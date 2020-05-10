@@ -1,0 +1,38 @@
+.nav,
+.header,
+.main {
+  @apply px-6 py-4 mb-4;
+}
+
+.nav {
+}
+
+.header {
+  @apply bg-green-400 !important;
+}
+
+.main {
+  @apply py-0 my-0;
+}
+
+.projects {
+  @screen md {
+    @apply w-4/5;
+  }
+
+  h1 {
+    @apply py-4 mt-10;
+  }
+}
+
+.project {
+  @apply mb-4;
+
+  li {
+    @apply px-2 m-1 inline-block bg-orange-400 rounded-full text-xs font-normal;
+
+    @media dark-mode {
+      @apply bg-indigo-300 text-gray-900;
+    }
+  }
+}

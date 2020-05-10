@@ -1,0 +1,68 @@
+.main,
+.header {
+  @apply px-6 py-4 mb-4;
+}
+
+.header {
+  @apply bg-orange-400 relative flex;
+  min-width: 100%;
+  min-width: 100vw;
+
+  h1 {
+    @apply text-4xl pb-4 italic;
+  }
+
+  h2 {
+    @apply text-3xl font-normal;
+  }
+
+  ul {
+    @apply py-4 flex flex-row items-center w-full;
+  }
+
+  li {
+    @apply inline-block mr-8 text-base;
+    a {
+      @apply border-0;
+    }
+  }
+
+  .intro,
+  .links-and-me {
+    max-width: calc(860px * 0.8);
+    min-width: auto;
+  }
+
+  .links-and-me {
+    @apply w-full relative pr-40;
+    .me {
+      @apply absolute right-0 top-0 bottom-0 border-gray-200 border-4;
+    }
+  }
+}
+
+.experience,
+.selected-projects {
+  @screen md {
+    @apply w-4/5;
+  }
+
+  header {
+    h1 {
+      @apply text-2xl py-4;
+    }
+  }
+}
+
+.experience {
+  @apply mb-16;
+}
+
+.selected-projects {
+  @apply text-red-500;
+}
+
+.me {
+  @apply rounded-full w-40 h-40 z-0 block;
+  background-image: linear-gradient(to bottom, #bcaa96, #9a989c);
+}

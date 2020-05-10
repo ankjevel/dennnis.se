@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Motorbranschens Riksförbund",
+    "role": "Fullstack",
+    "when": ["2019", "2020"],
+    "desc": "Development of a new web-based system for car service workshops and billing insurance companies. The challenges of this project include supporting all legal requirements of GDPR, bookkeeping law and building a system with the end user in focus.",
+    "tags": [
+      "Node",
+      "PostgreSQL",
+      "Typescript",
+      "GraphQL",
+      "React",
+      "Kubernetes",
+      "ReasonML"
+    ]
+  },
+  {
+    "title": "Energiföretagen",
+    "role": "Backend",
+    "when": ["2019", "2020"],
+    "desc": "Complete rebuild of Energiföretagens publications website, EBR-e, on top of their existing EPiServer.",
+    "tags": [
+      "TypeScript",
+      "AWS",
+      "PostgreSQL",
+      "GraphQL",
+      "EPiServer",
+      "ElasticSearch",
+      "Docker"
+    ]
+  },
+  {
+    "title": "Playpilot",
+    "role": "Backend",
+    "when": ["2019"],
+    "desc": "Created the foundation for a notification platform in AWS Lambda.",
+    "tags": ["AWS Lambda", "Node"]
+  },
+  {
+    "title": "Vimla",
+    "role": "Fullstack",
+    "when": ["2018", "2019"],
+    "desc": "Vimla is Telenors fighter brand. I was moving around between roles where needed.",
+    "tags": ["Node", "React", "React Native", "Docker", "AWS", "Android/Java"]
+  },
+  {
+    "title": "Arbetsförmedlingen",
+    "role": "Backend / Tech Lead",
+    "when": ["2017", "2020"],
+    "desc": "A service that made it easier for people who are new in Sweden to establish themselves on the Swedish job market.",
+    "tags": [
+      "Node",
+      "PostgreSQL",
+      "ElasticSearch",
+      "Docker",
+      "Kubernetes",
+      "Python"
+    ]
+  },
+  {
+    "title": "Läkare utan gränser (MSF)",
+    "role": "Fullstack",
+    "when": ["2016", "2017"],
+    "desc": "Digitalization of the recruitment process. Before there was a lot of paperwork and manual labor, but we helped MSF by building a web app that the recruiters could use on a tablet. These applications were then automatically processed through the system.",
+    "tags": ["Node", "Docker", "React", "PWA"]
+  },
+  {
+    "title": "Taxi Stockholm",
+    "role": "Backend",
+    "when": ["2016", "2017"],
+    "desc": "Building microservices as backend for their new mobile apps.",
+    "tags": ["Docker", "Node", "REST"]
+  },
+  {
+    "title": "Besedo",
+    "role": "Fullstack",
+    "when": ["2014", "2015"],
+    "desc": "Auditing system for ads on services like Blocket.",
+    "tags": ["AngularJS", "Node"]
+  },
+  {
+    "title": "Powerfx",
+    "role": "Frontend",
+    "when": ["2013", "2014"],
+    "desc": "Created a UI for a online music studio in chrome.",
+    "tags": ["CSS", "AngularJS"]
+  },
+  {
+    "title": "TRR Trygghetsrådet",
+    "role": "Frontend",
+    "when": ["2013", "2015"],
+    "desc": "Built a webapp for music streaming with all the basic features of a music streaming service we know today, but also with the ability to add your voice and stream to each other to make it more like your own radio station.",
+    "tags": ["AngularJS"]
+  },
+  {
+    "title": "Beckers",
+    "role": "Frontend",
+    "when": ["2012", "2014"],
+    "desc": "Rebuilding the user-facing websites for customer and companies",
+    "tags": ["HTML", "CSS", "jQuery"]
+  }
+]

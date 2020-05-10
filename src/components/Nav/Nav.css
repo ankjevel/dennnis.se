@@ -1,0 +1,9 @@
+.nav {
+  @apply px-6 py-4 mb-4;
+  a {
+    @apply border-0;
+    svg {
+      @apply align-middle;
+    }
+  }
+}
