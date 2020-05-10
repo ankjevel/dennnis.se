@@ -16,50 +16,52 @@ export const CV = () => {
   return (
     <Fragment>
       <header className={css.header}>
-        <section className={css.intro}>
-          <h1>Hej,</h1>
-          <h2>
-            I'm Dennis Pettersson, a developer based in Stockholm, Sweden. I
-            love solving problems and the never-ending optimisations.
-          </h2>
-        </section>
-        <section className={css.linksAndMe}>
-          <ul>
-            <li>
-              <a
-                href="mailto:hello@dennnis.se"
-                target="_blank"
-                title="email me"
-              >
-                <EntypoMail />
-              </a>
-            </li>
-            <li>
-              <a href="tel:073-334 00 02" target="_blank" title="call me">
-                <EntypoPhone />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/ankjevel/"
-                target="_blank"
-                title="github"
-              >
-                <EntypoGithub />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/ankjevel/"
-                target="_blank"
-                title="linked in"
-              >
-                <EntypoLinkedin />
-              </a>
-            </li>
-          </ul>
-          <img className={css.me} src="/me.jpg" />
-        </section>
+        <div className={css.headerHolder}>
+          <section className={css.intro}>
+            <h1>Hej,</h1>
+            <h2>
+              I'm Dennis Pettersson, a developer based in Stockholm, Sweden. I
+              love solving problems and the never-ending optimisations.
+            </h2>
+          </section>
+          <section className={css.linksAndMe}>
+            <ul>
+              <li>
+                <a
+                  href="mailto:hello@dennnis.se"
+                  target="_blank"
+                  title="email me"
+                >
+                  <EntypoMail />
+                </a>
+              </li>
+              <li>
+                <a href="tel:073-334 00 02" target="_blank" title="call me">
+                  <EntypoPhone />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ankjevel/"
+                  target="_blank"
+                  title="github"
+                >
+                  <EntypoGithub />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ankjevel/"
+                  target="_blank"
+                  title="linked in"
+                >
+                  <EntypoLinkedin />
+                </a>
+              </li>
+            </ul>
+            <img className={css.me} src="/me.jpg" />
+          </section>
+        </div>
       </header>
 
       <main className={css.main}>
