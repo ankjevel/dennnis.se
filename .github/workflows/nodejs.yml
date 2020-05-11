@@ -1,0 +1,42 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    
+    - name: install dependencies
+      run: npm ci
+    - name: run typescript build
+      run: npm run build
+    - name: deploy
+      run: |
+        mkdir -p mkdir ${HOME}/.ssh
+        echo -n ${{ secrets.SSH_KEY }} > ${HOME}/.ssh/id_rsa
+        chmod 700 ${HOME}/.ssh
+        chmod 600 ${HOME}/.ssh/id_rsa
+        cat > ${HOME}/.ssh/config <<- EOF
+        Host remote
+          Port ${{ secrets.SSH_PORT }}
+          Hostname ${{ secrets.SSH_HOST }}
+          User ${{ secrets.SSH_USER }}
+          IdentityFile ~/.ssh/id_rsa
+        EOF
+        scp dist/* remote:${{ secrets.DIRECTORY }}
+        rm -rf ${HOME}/.ssh
