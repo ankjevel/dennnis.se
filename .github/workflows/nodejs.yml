@@ -31,12 +31,5 @@ jobs:
         echo -n "${{ secrets.SSH_KEY }}" > ${HOME}/.ssh/id_rsa
         chmod 700 ${HOME}/.ssh
         chmod 600 ${HOME}/.ssh/id_rsa
-        cat > ${HOME}/.ssh/config <<- EOF
-        Host remote
-          Port ${{ secrets.SSH_PORT }}
-          Hostname ${{ secrets.SSH_HOST }}
-          User ${{ secrets.SSH_USER }}
-          IdentityFile ~/.ssh/id_rsa
-        EOF
-        scp dist/* "remote:${{ secrets.DIRECTORY }}"
+        scp -i ~/.ssh/id_rsa dist/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DIRECTORY }}"
         rm -rf ${HOME}/.ssh
