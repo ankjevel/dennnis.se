@@ -28,7 +28,7 @@ jobs:
     - name: deploy
       run: |
         mkdir -p mkdir ${HOME}/.ssh
-        echo -n ${{ secrets.SSH_KEY }} > ${HOME}/.ssh/id_rsa
+        echo -n "${{ secrets.SSH_KEY }}" > ${HOME}/.ssh/id_rsa
         chmod 700 ${HOME}/.ssh
         chmod 600 ${HOME}/.ssh/id_rsa
         cat > ${HOME}/.ssh/config <<- EOF
@@ -38,5 +38,5 @@ jobs:
           User ${{ secrets.SSH_USER }}
           IdentityFile ~/.ssh/id_rsa
         EOF
-        scp dist/* remote:${{ secrets.DIRECTORY }}
+        scp dist/* "remote:${{ secrets.DIRECTORY }}"
         rm -rf ${HOME}/.ssh
