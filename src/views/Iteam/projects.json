@@ -1,5 +1,12 @@
 [
   {
+    "title": "Arbetsförmedlingen",
+    "role": "Backend",
+    "when": ["2020"],
+    "desc": "Translating a docker-swarm cluster to OpenShift",
+    "tags": ["Kubernetes", "OpenShift"]
+  },
+  {
     "title": "Motorbranschens Riksförbund",
     "role": "Fullstack",
     "when": ["2019", "2020"],
@@ -46,16 +53,9 @@
   {
     "title": "Arbetsförmedlingen",
     "role": "Backend / Tech Lead",
-    "when": ["2017", "2020"],
+    "when": ["2017", "2018"],
     "desc": "A service that made it easier for people who are new in Sweden to establish themselves on the Swedish job market.",
-    "tags": [
-      "Node",
-      "PostgreSQL",
-      "ElasticSearch",
-      "Docker",
-      "Kubernetes",
-      "Python"
-    ]
+    "tags": ["Node", "PostgreSQL", "ElasticSearch", "Docker", "Python"]
   },
   {
     "title": "Läkare utan gränser (MSF)",
@@ -68,21 +68,42 @@
     "title": "Taxi Stockholm",
     "role": "Backend",
     "when": ["2016", "2017"],
-    "desc": "Building microservices as backend for their new mobile apps.",
+    "desc": "Development of a RESTful API in node.js, integrations with SOAP API:s, Oracle DB and RPC backends.",
     "tags": ["Docker", "Node", "REST"]
+  },
+  {
+    "title": "Svensk förening för allmänmedicin",
+    "role": "Fullstack",
+    "when": ["2016", "2017"],
+    "desc": "Created a new CMS for their main site.",
+    "tags": ["Docker", "Node"]
+  },
+  {
+    "title": "Gaia Leadership",
+    "role": "Fullstack",
+    "when": ["2016", "2017"],
+    "desc": "Translated a Excel-document to a more user-friendly webb-app.",
+    "tags": ["Docker", "Node", "sass", "handlebars", "svg"]
+  },
+  {
+    "title": "Sveriges bagare & konditorer",
+    "role": "Frontend",
+    "when": ["2015"],
+    "desc": "Created a web-app built in React.",
+    "tags": ["React"]
   },
   {
     "title": "Besedo",
     "role": "Fullstack",
     "when": ["2014", "2015"],
-    "desc": "Auditing system for ads on services like Blocket.",
-    "tags": ["AngularJS", "Node"]
+    "desc": "Developed a new frontend for a automated moderation tool (for Blocket). I did a lot of load-testing and performance optimizations.",
+    "tags": ["AngularJS", "Node", "JMeter"]
   },
   {
     "title": "Powerfx",
     "role": "Frontend",
     "when": ["2013", "2014"],
-    "desc": "Created a UI for a online music studio in chrome.",
+    "desc": "Frontend for a online music studio (Soundation). Sound was generated using Chrome Native Client.",
     "tags": ["CSS", "AngularJS"]
   },
   {
@@ -93,10 +114,10 @@
     "tags": ["AngularJS"]
   },
   {
-    "title": "Beckers",
+    "title": "various",
     "role": "Frontend",
-    "when": ["2012", "2014"],
-    "desc": "Rebuilding the user-facing websites for customer and companies",
+    "when": ["2012", "2015"],
+    "desc": "During this time I implemented various designs made by other firms. Usually it was in jQuery or angularJS and some older CSS/HTML.",
     "tags": ["HTML", "CSS", "jQuery"]
   }
 ]
