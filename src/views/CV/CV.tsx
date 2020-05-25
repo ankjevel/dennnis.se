@@ -70,24 +70,32 @@ export const CV = () => {
             <h1>Experience</h1>
           </header>
           <article>
-            <h1>Iteam</h1>
-            <h2>Developer, 2012 - Present</h2>
-            <p>
-              Iteam is a development consultancy working in-house.
-              <br />I started as an intern in 2012. I've shifted my focus from
-              frontend to backend.
-              <br />
-              I build web services, mostly written in Node. The integrations are
-              made using GraphQL, with a TDD-mindset. When needed, I do write
-              frontend in React or React Native. Based on the project, we work
-              with either SCRUM or Kanban.
-              <br /> We build microservices in Docker, running in AWS (EKS or
-              EC2); TravisCI, Drone or GithubActions are used for building and
-              deploying.
-            </p>
-            <Link to="/iteam">
-              Here's a selection of the projects I've a been a part of at Iteam
-            </Link>
+            <ul>
+              {/* <li>
+                <h2>Senior Developer, 2020 - Present</h2>
+              </li> */}
+              <li>
+                <h1>Iteam</h1>
+                <h2>Developer, 2012 - 2020</h2>
+                <p>
+                  Iteam is a development consultancy working in-house.
+                  <br />I started as an intern in 2012. I've shifted my focus
+                  from frontend to backend.
+                  <br />
+                  I build web services, mostly written in Node. The integrations
+                  are made using GraphQL, with a TDD-mindset. When needed, I do
+                  write frontend in React or React Native. Based on the project,
+                  we work with either SCRUM or Kanban.
+                  <br /> We build microservices in Docker, running in AWS (EKS
+                  or EC2); TravisCI, Drone or GithubActions are used for
+                  building and deploying.
+                </p>
+                <Link to="/iteam">
+                  Here's a selection of the projects I've a been a part of at
+                  Iteam
+                </Link>
+              </li>
+            </ul>
           </article>
         </section>
 
