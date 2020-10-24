@@ -71,9 +71,10 @@ export const CV = () => {
           </header>
           <article>
             <ul>
-              {/* <li>
-                <h2>Senior Developer, 2020 - Present</h2>
-              </li> */}
+              <li>
+                <h1>Springworks</h1>
+                <h2>Senior Backend Developer, 2020 - Present</h2>
+              </li>
               <li>
                 <h1>Iteam</h1>
                 <h2>Developer, 2012 - 2020</h2>
