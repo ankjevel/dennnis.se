@@ -133,7 +133,7 @@
     "source-map": "0.7.3",
     "source-map-loader": "0.2.4",
     "source-map-support": "0.5.19",
-    "ts-node-dev": "1.0.0-pre.44",
+    "ts-node-dev": "1.0.0",
     "webpack-dev-server": "3.11.0"
   },
   "optionalDependencies": {
