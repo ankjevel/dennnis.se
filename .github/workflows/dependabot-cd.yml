@@ -1,0 +1,24 @@
+name: Dependabot CD
+on: pull_request
+jobs:
+  approve_pr:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: review
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.BUILD_TOKEN }}
+          script: |
+            await github.pulls.createReview({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.number,
+              event: 'APPROVE'
+            });
+            await github.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.number,
+              body: '@dependabot merge'
+            });

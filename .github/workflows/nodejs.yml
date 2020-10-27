@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2.1.2
       with:
         node-version: ${{ matrix.node-version }}
     
@@ -40,5 +40,5 @@ jobs:
           IdentityFile ~/.ssh/id_rsa
           
         EOF
-        scp -F ~/.ssh/config -P  ${{ secrets.SSH_PORT }} -p dist/* "remote:${{ secrets.DIRECTORY }}"
+        scp -F ~/.ssh/config -P ${{ secrets.SSH_PORT }} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p dist/* "remote:${{ secrets.DIRECTORY }}"
         rm -rf ${HOME}/.ssh
