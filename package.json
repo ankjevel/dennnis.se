@@ -121,7 +121,7 @@
     "react-three-fiber": "4.2.3",
     "style-loader": "1.2.1",
     "svg-inline-loader": "0.8.2",
-    "tailwindcss": "1.4.6",
+    "tailwindcss": "1.9.6",
     "tailwindcss-animatecss": "0.3.3",
     "ts-loader": "7.0.3",
     "ts-node": "8.10.1",
