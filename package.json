@@ -142,7 +142,7 @@
     "cssnano": "4.1.10",
     "eslint": "7.16.0",
     "eslint-plugin-react-hooks": "4.2.0",
-    "html-webpack-plugin": "4.5.0",
+    "html-webpack-plugin": "4.5.1",
     "postcss-import": "12.0.1",
     "postcss-loader": "3.0.0",
     "prettier": "2.2.1",
