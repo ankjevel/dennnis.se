@@ -179,7 +179,7 @@
     "webpack-dev-server": "3.11.2"
   },
   "optionalDependencies": {
-    "husky": "4.3.7"
+    "husky": "4.3.8"
   },
   "husky": {
     "hooks": {
