@@ -120,7 +120,7 @@
   "author": "Dennis Pettersson <dennis.pettersson@gmail.se>",
   "dependencies": {
     "@babel/core": "7.13.1",
-    "@babel/plugin-proposal-class-properties": "7.12.13",
+    "@babel/plugin-proposal-class-properties": "7.13.0",
     "@babel/plugin-proposal-object-rest-spread": "7.12.13",
     "@babel/preset-env": "7.13.0",
     "@babel/preset-react": "7.12.13",
