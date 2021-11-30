@@ -127,7 +127,7 @@
     "@babel/preset-typescript": "7.13.0",
     "@iteam/eslint-config-iteam-node": "0.1.0",
     "@iteam/eslint-config-node": "0.3.0",
-    "@types/node": "14.14.31",
+    "@types/node": "16.11.11",
     "@types/react": "17.0.3",
     "@types/react-dom": "17.0.1",
     "@types/react-router-dom": "5.1.7",
